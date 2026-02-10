@@ -1,7 +1,7 @@
 <!ELEMENT factura (cliente, productos)>
 <!ATTLIST factura 
     numero ID #REQUIRED
-    fecha CDATA #REQUIRED>
+    fecha (#PCDATA) #REQUIRED>
 
 <!ELEMENT cliente (nombre, direccion, email?)>
 <!ATTLIST cliente id_cliente CDATA #REQUIRED>
