@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE nómina SYSTEM "externo.dtd">
+<!DOCTYPE nómina SYSTEM "estructura.dtd">
 <nómina>
     <empleado id_tipo="nacional">
     <nombre>Elena García</nombre>
