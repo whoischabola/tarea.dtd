@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (cliente, productos)>
+    <!ATTLIST factura 
+        numero CDATA #REQUIRED
+        fecha CDATA #REQUIRED>
+
+    <!ELEMENT cliente (nombre, direccion, email?)>
+    <!ATTLIST cliente id_cliente CDATA #REQUIRED>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+
+    <!ELEMENT productos (producto+)>
+    <!ELEMENT producto (nombre_prod, cantidad, precio)>
+
+    <!ELEMENT nombre_prod (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio moneda CDATA #FIXED "EUR">
+]>
+
+<factura numero="F-2024-001" fecha="2024-05-20">
+    <cliente id_cliente="C-988">
+        <nombre>Juan Pérez</nombre>
+        <direccion>Calle Mayor 15, Madrid</direccion>
+        <email>juan.perez@email.com</email>
+    </cliente>
+    
+    <productos>
+        <producto>
+            <nombre_prod>Monitor Gamer 24"</nombre_prod>
+            <cantidad>1</cantidad>
+            <precio moneda="EUR">185.50</precio>
+        </producto>
+        <producto>
+            <nombre_prod>Teclado Mecánico RGB</nombre_prod>
+            <cantidad>2</cantidad>
+            <precio moneda="EUR">45.00</precio>
+        </producto>
+        <producto>
+            <nombre_prod>Cable HDMI 2.1</nombre_prod>
+            <cantidad>3</cantidad>
+            <precio moneda="EUR">12.99</precio>
+        </producto>
+    </productos>
+</factura>

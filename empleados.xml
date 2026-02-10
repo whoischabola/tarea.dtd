@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nómina SYSTEM "externo.dtd">
+<nómina>
+    <empleado id_tipo="nacional">
+    <nombre>Elena García</nombre>
+        <id>44556677</id>
+        <cargo>Analista de Datos</cargo>
+        <salario moneda="EUR">3200</salario>
+    </empleado>
+    <empleado id_tipo="extranjero">
+        <nombre>Marcos Soler</nombre>
+        <id>A11223344</id>
+        <cargo>Desarrollador Senior</cargo>
+        <salario moneda="EUR">4500</salario>
+    </empleado>
+</nómina>
+

@@ -1,0 +1,18 @@
+<!ELEMENT calendario (evento+)>
+<!ATTLIST calendario anio CDATA #IMPLIED>
+
+<!ELEMENT evento (titulo, fecha, descripcion?, ubicacion?)>
+<!ATTLIST evento 
+          id ID #REQUIRED
+          categoria (social | corporativo | cultural | deportivo) "social">
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha (dia, mes, anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT ubicacion (nombre_lugar, direccion?)>
+<!ELEMENT nombre_lugar (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>

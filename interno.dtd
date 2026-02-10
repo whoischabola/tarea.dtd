@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nómina [
+    <!ELEMENT nómina (empleado+)>
+    <!ELEMENT empleado (nombre, id, cargo, salario)>
+    <!ATTLIST empleado id_tipo CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT cargo (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+    <!ATTLIST salario moneda CDATA #FIXED "EUR">
+]>
+<nómina>
+    <empleado id_tipo="nacional">
+        <nombre>Elena García</nombre>
+        <id>44556677</id>
+        <cargo>Analista de Datos</cargo>
+        <salario>3200</salario>
+    </empleado>
+</nómina>

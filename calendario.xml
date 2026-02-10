@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE calendario [
+    <!ELEMENT calendario (evento+)>
+    <!ELEMENT evento (titulo, fecha, descripcion?, ubicacion?)>
+    <!ATTLIST evento id ID #REQUIRED categoria (social|corporativo|cultural|deportivo) "social">
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT fecha (dia, mes, anio)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT ubicacion (nombre_lugar, direccion?)>
+    <!ELEMENT nombre_lugar (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+]>
+
+<calendario>
+    <evento id="E001" categoria="cultural">
+        <titulo>Exposición de Arte Moderno</titulo>
+        <fecha>
+            <dia>15</dia>
+            <mes>Octubre</mes>
+            <anio>2024</anio>
+        </fecha>
+        <descripcion>Una muestra de las mejores obras del siglo XXI.</descripcion>
+        <ubicacion>
+            <nombre_lugar>Museo Central</nombre_lugar>
+            <direccion>Av. de la Constitución, 45</direccion>
+        </ubicacion>
+    </evento>
+
+    <evento id="E002" categoria="corporativo">
+        <titulo>Reunión Trimestral de Ventas</titulo>
+        <fecha>
+            <dia>20</dia>
+            <mes>Octubre</mes>
+            <anio>2024</anio>
+        </fecha>
+        </evento>
+</calendario>

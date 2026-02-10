@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nómina SYSTEM "estructura.dtd" [
+    <!ENTITY empresa "Tech Solutions S.A.">
+    <!ELEMENT nota (#PCDATA)> ]>
+<nómina>
+    <empleado id_tipo="nacional">
+        <nombre>Elena García</nombre>
+        <id>44556677</id>
+        <cargo>Gerente en &empresa;</cargo>
+        <salario moneda="EUR">5000</salario>
+    </empleado>
+</nómina>

@@ -1,0 +1,8 @@
+<!ELEMENT nómina (empleado+)>
+<!ELEMENT empleado (nombre, id, cargo, salario)>
+<!ATTLIST empleado id_tipo (nacional | extranjero) "nacional">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT cargo (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ATTLIST salario moneda CDATA #REQUIRED>

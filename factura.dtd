@@ -1,0 +1,20 @@
+<!ELEMENT factura (cliente, productos)>
+<!ATTLIST factura 
+    numero ID #REQUIRED
+    fecha CDATA #REQUIRED>
+
+<!ELEMENT cliente (nombre, direccion, email?)>
+<!ATTLIST cliente id_cliente CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre_prod, cantidad, precio)>
+<!ATTLIST producto codigo IDREF #IMPLIED>
+
+<!ELEMENT nombre_prod (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda (EUR|USD|MXN) "EUR">
