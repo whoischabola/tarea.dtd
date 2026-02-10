@@ -1,5 +1,5 @@
 <!ELEMENT calendario (evento+)>
-<!ATTLIST calendario anio CDATA #IMPLIED>
+<!ATTLIST calendario anio (#PCDATA) #IMPLIED>
 
 <!ELEMENT evento (titulo, fecha, descripcion?, ubicacion?)>
 <!ATTLIST evento 
