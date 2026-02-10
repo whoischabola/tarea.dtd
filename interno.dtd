@@ -2,12 +2,12 @@
 <!DOCTYPE nómina [
     <!ELEMENT nómina (empleado+)>
     <!ELEMENT empleado (nombre, id, cargo, salario)>
-    <!ATTLIST empleado id_tipo CDATA #REQUIRED>
+    <!ATTLIST empleado id_tipo (#PCDATA) #REQUIRED>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT id (#PCDATA)>
     <!ELEMENT cargo (#PCDATA)>
     <!ELEMENT salario (#PCDATA)>
-    <!ATTLIST salario moneda CDATA #FIXED "EUR">
+    <!ATTLIST salario moneda (#PCDATA) #FIXED "EUR">
 ]>
 <nómina>
     <empleado id_tipo="nacional">
