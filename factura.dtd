@@ -4,7 +4,7 @@
     fecha (#PCDATA) #REQUIRED>
 
 <!ELEMENT cliente (nombre, direccion, email?)>
-<!ATTLIST cliente id_cliente CDATA #REQUIRED>
+<!ATTLIST cliente id_cliente (#PCDATA) #REQUIRED>
 
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT direccion (#PCDATA)>
